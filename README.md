@@ -67,11 +67,9 @@ Welcome to BemGram, your go-to social app for connecting and sharing experiences
 
 ## Key Features
 
-- **Diverse Travel Packages**: Explore a variety of packages including city tours, group travels, adventure experiences, and historical journeys.
-- **Interactive Google Maps Integration**: Navigate through different locales with integrated Google Maps, enhancing the exploration of cities and historical sites.
-- **User Reviews**: Engage with community feedback through user reviews, helping travelers make informed decisions.
-- **Responsive and Intuitive Design**: Crafted with Bootstrap for a user-friendly experience across all devices.
-
+- **User Profiles and Connections:** Connect with friends, customize your profile, and stay in touch with the latest updates from your network.
+- **Media Sharing:** Share photos and videos with your followers, and explore content from others in your feed.
+- **Appwrite Backend Integration:** Utilize the robust backend capabilities of Appwrite for secure and efficient data management.
 ## Technologies Used
 
 ### Frontend
