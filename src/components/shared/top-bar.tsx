@@ -17,6 +17,11 @@ const TopBar = () => {
     }
   }, [isSuccess]);
 
+  const logoutHandler = () => {
+    signOutAccount()
+    navigate("/")
+  }
+
   return (
     <section className="sticky top-0 z-50 md:hidden bg-slate-900 w-full">
       <div className="flex justify-between items-center pt-2 px-3">
@@ -29,7 +34,7 @@ const TopBar = () => {
 
         <div className="flex gap-0">
           <Button
-            onClick={() => signOutAccount()}
+            onClick={logoutHandler}
             variant="ghost"
             className="hover:bg-slate-900 hover:text-orange-300"
           >

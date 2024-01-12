@@ -19,6 +19,11 @@ const LeftsideBar = () => {
     }
   }, [isSuccess]);
 
+  const logoutHandler = () => {
+    signOutAccount()
+    navigate("/")
+  }
+
   return (
     <nav className="hidden md:flex px-4 py-7 flex-col justify-between min-w-[270px] bg-gray-950">
       <div className="flex flex-col gap-11 ">
@@ -65,7 +70,7 @@ const LeftsideBar = () => {
         </ul>
       </div>
       <Button
-        onClick={() => signOutAccount()}
+        onClick={logoutHandler}
         variant="ghost"
         className=" flex justify-start items-center text-white   hover:bg-gray-950 hover:text-orange-300"
       >
