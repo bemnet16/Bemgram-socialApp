@@ -3,6 +3,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 
+import { toast } from "@/components/ui/use-toast";
 import { useCreatePost, useUpdatePost } from "@/lib/react-query/queriesAndMutations";
 import { useUserContext } from "@/context/auth-context";
 import FileUploader from "../shared/file-uploader";
@@ -19,7 +20,6 @@ import { Textarea } from "../ui/textarea";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
 import { Models } from "appwrite";
-import { toast } from "../ui/use-toast";
 import { Loader2 } from "lucide-react";
 
 const formSchema = z.object({
@@ -39,6 +39,7 @@ const PostForms = ({ post, action }: PostFormProps) => {
   const { mutateAsync: createPost, isPending: isCreatingPost } =
     useCreatePost();
   const {mutateAsync: updatePost, isPending: isUpdatingPost} = useUpdatePost()
+  
 
   const navigate = useNavigate();
   const form = useForm<z.infer<typeof formSchema>>({

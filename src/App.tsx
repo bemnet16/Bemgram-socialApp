@@ -2,12 +2,12 @@ import { Route, Routes } from "react-router-dom";
 
 import SignInPage from "./_auth/forms/signIn_page";
 import SingUpPage from "./_auth/forms/singUp_page";
-import { AllUsers_page, CreatePost_page, EditPost_page, Explore_page, Home_page, LikedPost_page, PostDetails_page, Profile_page, Saved_page, UpdateProfile_page } from "./_root/pages/page_imports";
-
-import "./globals.css";
 import AuthLayout from "./_auth/auth_layout";
+
+import { AllUsers_page, CreatePost_page, EditPost_page, Explore_page, Home_page, LikedPost_page, PostDetails_page, Profile_page, Saved_page, UpdateProfile_page } from "./_root/pages/page_imports";
 import RootLayout from "./_root/root_layout";
 
+import "./globals.css";
 import { Toaster } from "@/components/ui/toaster"
 
 function App() {

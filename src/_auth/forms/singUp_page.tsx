@@ -10,7 +10,6 @@ import {
   useSignInAccount,
 } from "@/lib/react-query/queriesAndMutations";
 
-import { useToast } from "@/components/ui/use-toast";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -22,6 +21,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Loader2 } from "lucide-react";
+import { toast } from "@/components/ui/use-toast";
 
 const formSchema = z.object({
   name: z
@@ -40,8 +40,6 @@ const SingUpPage = () => {
     useSignInAccount();
   const {checkAuthUser, isLoading: isUserLoading} = useUserContext()
   const navigate = useNavigate()
-  const { toast } = useToast();
-  
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),

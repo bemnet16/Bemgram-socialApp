@@ -14,7 +14,7 @@ import {
 import { useToast } from "@/components/ui/use-toast";
 import { useUserContext } from "@/context/auth-context";
 import { useGetUserById, useUpdateUser } from "@/lib/react-query/queriesAndMutations";
-import { Loader2 } from "lucide-react";
+import { ClipboardEdit, Loader2 } from "lucide-react";
 import ProfileUploader from "@/components/shared/ProfileUploader";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -86,13 +86,7 @@ const UpdateProfilePage = () => {
     <div className="flex flex-1">
       <div className="common-container">
         <div className="flex-start gap-3 justify-start w-full max-w-5xl">
-          <img
-            src="/assets/icons/edit.svg"
-            width={36}
-            height={36}
-            alt="edit"
-            className="invert-white"
-          />
+          <ClipboardEdit />
           <h2 className="h3-bold md:h2-bold text-left w-full">Edit Profile</h2>
         </div>
 
