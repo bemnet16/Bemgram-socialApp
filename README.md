@@ -26,13 +26,13 @@ Welcome to BemGram, your go-to social app for connecting and sharing experiences
 ###### Users can see posts, search and also can filter using different parametes
 <p align="center">
 <img src="https://github.com/bemnet16/Bemgram-socialApp/blob/UI-Preview/screenshots/Screenshot%20(760).png" height="auto" width="600"/>
+<img src="https://github.com/bemnet16/Bemgram-socialApp/blob/UI-Preview/screenshots/mo-2.png" height="auto" width="300"/>
 </p>
 
 **Post detail page**
 ###### detaild info and related posts are displayed
 <p align="center">
 <img src="https://github.com/bemnet16/Bemgram-socialApp/blob/UI-Preview/screenshots/Screenshot%20(766).png" height="auto" width="600"/>
-<img src="https://github.com/bemnet16/Bemgram-socialApp/blob/UI-Preview/screenshots/mo-2.png" height="auto" width="300"/>
 </p>
 
 **All users page**
